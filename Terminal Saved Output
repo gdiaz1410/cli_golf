@@ -1,0 +1,253 @@
+Last login: Tue Sep 20 10:17:59 on ttys000
+GabeDiaz ~
+$ cd code/wdi/
+GabeDiaz ~/code/wdi
+$ ls
+cli-practice/  homework/  lectures/  test.txt
+GabeDiaz ~/code/wdi
+$ git clone git@github.com:ga-students/wdi-atx-8.git
+Cloning into 'wdi-atx-8'...
+remote: Counting objects: 52, done.
+remote: Compressing objects: 100% (38/38), done.
+remote: Total 52 (delta 19), reused 30 (delta 7), pack-reused 0
+Receiving objects: 100% (52/52), 11.46 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (19/19), done.
+GabeDiaz ~/code/wdi
+$ ls
+cli-practice/  homework/  lectures/  test.txt  wdi-atx-8/
+GabeDiaz ~/code/wdi
+$ cd wdi-atx-8/w01/d02/afternoon/student/fake-lecture/
+GabeDiaz ~/code/wdi/wdi-atx-8/w01/d02/afternoon/student/fake-lecture on master
+$ pwd
+/Users/GabeDiaz/code/wdi/wdi-atx-8/w01/d02/afternoon/student/fake-lecture
+GabeDiaz ~/code/wdi/wdi-atx-8/w01/d02/afternoon/student/fake-lecture on master
+$ atom .
+GabeDiaz ~/code/wdi/wdi-atx-8/w01/d02/afternoon/student/fake-lecture on master
+$ git branch 
+* master
+GabeDiaz ~/code/wdi/wdi-atx-8/w01/d02/afternoon/student/fake-lecture on master
+$ git branch day2
+GabeDiaz ~/code/wdi/wdi-atx-8/w01/d02/afternoon/student/fake-lecture on master
+$ git checkout
+Your branch is up-to-date with 'origin/master'.
+GabeDiaz ~/code/wdi/wdi-atx-8/w01/d02/afternoon/student/fake-lecture on master
+$ git branch
+  day2
+* master
+GabeDiaz ~/code/wdi/wdi-atx-8/w01/d02/afternoon/student/fake-lecture on master
+$ git branch day2 
+fatal: A branch named 'day2' already exists.
+GabeDiaz ~/code/wdi/wdi-atx-8/w01/d02/afternoon/student/fake-lecture on master[!]
+$ git checkout day2 
+M	w01/d02/afternoon/student/fake-lecture/index.html
+Switched to branch 'day2'
+GabeDiaz ~/code/wdi/wdi-atx-8/w01/d02/afternoon/student/fake-lecture on day2[!]
+$ git commit -am"Done fo the day"
+[day2 fbd80c6] Done fo the day
+ 1 file changed, 10 insertions(+)
+GabeDiaz ~/code/wdi/wdi-atx-8/w01/d02/afternoon/student/fake-lecture on day2
+$ git branch
+* day2
+  master
+GabeDiaz ~/code/wdi/wdi-atx-8/w01/d02/afternoon/student/fake-lecture on day2
+$ cd ..
+GabeDiaz ~/code/wdi/wdi-atx-8/w01/d02/afternoon/student on day2
+$ ~
+-bash: /Users/GabeDiaz: is a directory
+GabeDiaz ~/code/wdi/wdi-atx-8/w01/d02/afternoon/student on day2
+$ cd ~
+GabeDiaz ~
+$ cd code/wdi/homework/
+GabeDiaz ~/code/wdi/homework
+$ git clone git@github.com:gdiaz1410/cli_golf.git
+fatal: destination path 'cli_golf' already exists and is not an empty directory.
+GabeDiaz ~/code/wdi/homework
+$ open .
+GabeDiaz ~/code/wdi/homework
+$ open .
+GabeDiaz ~/code/wdi/homework
+$ git clone git@github.com:gdiaz1410/cli_golf.git
+Cloning into 'cli_golf'...
+remote: Counting objects: 12, done.
+remote: Total 12 (delta 0), reused 0 (delta 0), pack-reused 12
+Receiving objects: 100% (12/12), 17.82 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (1/1), done.
+GabeDiaz ~/code/wdi/homework
+$ cd cli_golf/
+GabeDiaz ~/code/wdi/homework/cli_golf on master
+$ git branch
+* master
+GabeDiaz ~/code/wdi/homework/cli_golf on master
+$ tree .
+.
+├── LICENSE.txt
+├── README.md
+├── kitchen
+│   ├── cans.txt
+│   ├── fridge
+│   │   ├── diapers.txt
+│   │   ├── freezer
+│   │   │   ├── couch.txt
+│   │   │   ├── frozenpeas.txt
+│   │   │   └── icecream.txt
+│   │   ├── milk.txt
+│   │   └── trashcan
+│   │       ├── banana-peels.txt
+│   │       ├── chicken-bones.txt
+│   │       ├── egg-shells.txt
+│   │       └── sink
+│   │           ├── clean-dishes.txt
+│   │           ├── delete-me.txt
+│   │           └── dirty-dishes.txt
+│   └── pantry
+│       ├── cans.txt
+│       ├── cereal.txt
+│       └── crisper-drawer
+│           └── lettuce.txt
+└── kitchen.zip
+
+7 directories, 18 files
+GabeDiaz ~/code/wdi/homework/cli_golf on master[?]
+$ cd kitchen/
+GabeDiaz ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ mv fridge/trashcan/ .
+'fridge/trashcan/' -> './trashcan'
+GabeDiaz ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ mv trashcan/sink/ .
+'trashcan/sink/' -> './sink'
+GabeDiaz ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree .
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   ├── cereal.txt
+│   └── crisper-drawer
+│       └── lettuce.txt
+├── sink
+│   ├── clean-dishes.txt
+│   ├── delete-me.txt
+│   └── dirty-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+6 directories, 15 files
+GabeDiaz ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ rm sink/delete-me.txt fridge/diapers.txt cans.txt fridge/freezer/couch.txt 
+removed 'sink/delete-me.txt'
+removed 'fridge/diapers.txt'
+removed 'cans.txt'
+removed 'fridge/freezer/couch.txt'
+GabeDiaz ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree .
+.
+├── fridge
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   ├── cereal.txt
+│   └── crisper-drawer
+│       └── lettuce.txt
+├── sink
+│   ├── clean-dishes.txt
+│   └── dirty-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+6 directories, 11 files
+GabeDiaz ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ mv pantry/crisper-drawer/ fridge
+'pantry/crisper-drawer/' -> 'fridge/crisper-drawer'
+GabeDiaz ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree .
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── clean-dishes.txt
+│   └── dirty-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+6 directories, 11 files
+GabeDiaz ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ mkdir sink/drying-rack
+gmkdir: created directory 'sink/drying-rack'
+GabeDiaz ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ mv sink/clean-dishes.txt sink/drying-rack/
+'sink/clean-dishes.txt' -> 'sink/drying-rack/clean-dishes.txt'
+GabeDiaz ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree .
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 11 files
+GabeDiaz ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ touch fridge/crisper-drawer/apples.txt
+GabeDiaz ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ tree .
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+GabeDiaz ~/code/wdi/homework/cli_golf/kitchen on master[?]
+$ 
